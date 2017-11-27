@@ -34,6 +34,8 @@ This definitions imply a contant `n0` beyond which they are satisfied. We do not
 
 ![O, Ω, Ɵ](./n0.png)
 
+Each of these complexities defines a numerical function: time vs. size.
+
 # Orders
 
 | notation      | name            |
@@ -48,7 +50,7 @@ This definitions imply a contant `n0` beyond which they are satisfied. We do not
 
 Note, too, that O(log n) is exactly the same as O(log(n^c)). The logarithms differ only by a
 constant factor, and the big O notation ignores that. Similarly, logs with different constant
-bases are equivalent.
+bases are equivalent. But when both functions in a product are increasing, both constants are important.
 
 Each memory access takes exactly 1 step. We measure the run time of an algorithm by counting the number of steps.
 
@@ -109,6 +111,8 @@ end loop;
 ```
 
 has complexity of N^2. The loop executes N times and each function/procedure call g(N) is complexity O(N).
+
+# TODO multiplication by a factor does not add anything
 
 # Resources:
 
