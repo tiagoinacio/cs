@@ -14,6 +14,28 @@ or
 
 Intuitively, this means that `f` does not grow faster than `g`.
 
+# Names of Bounding Functions
+
+Big O (O) is the upper bound of a function.
+
+Big omega (Ω) is the lower bound of a function.
+
+Big theta (Ɵ) is in the middle of Big O and Big Ω.
+
+`g(n) = O(f(n))` means `C x f(n)` is an upper bound on `g(n)`.
+
+`g(n) = Ω(f(n))` means `C x f(n)` is a lower bound on `g(n)`.
+
+`g(n) = Ɵ(f(n))` means `C1 x f(n)` is an upper bound on `g(n)` and `C2 x f(n)` is a lower bound on `g(n)`. It's a tight bound.
+
+`C, C1, C2` are all constants independent of `n`.
+
+This definitions imply a contant `n0` beyond which they are satisfied. We do not care about small values of `n`.
+
+![O, Ω, Ɵ](./n0.png)
+
+# Orders
+
 | notation      | name            |
 |---------------|-----------------|
 | O(1)          | constant        |
@@ -28,7 +50,7 @@ Note, too, that O(log n) is exactly the same as O(log(n^c)). The logarithms diff
 constant factor, and the big O notation ignores that. Similarly, logs with different constant
 bases are equivalent.
 
-# Notes
+Each memory access takes exactly 1 step. We measure the run time of an algorithm by counting the number of steps.
 
 Be careful to differentiate between:
 
@@ -36,7 +58,20 @@ Be careful to differentiate between:
 
 2. Complexity: how do the resource requirements of a program or algorithm scale, i.e., what happens as the size of the problem being solved gets larger?
 
+
 # Examples
+
+## Big O
+
+![big o](./big-o.png)
+
+## Big Omega
+
+![big omegae](./big-omega.png)
+
+## Big Theta
+
+![big theta](./big-theta.png)
 
 ## Nested Loops
 
@@ -77,4 +112,6 @@ has complexity of N^2. The loop executes N times and each function/procedure cal
 
 # Resources:
 
-http://web.mit.edu/16.070/www/lecture/big_o.pdf
+[MIT Big O PDF](http://web.mit.edu/16.070/www/lecture/big_o.pdf)
+
+[CSE373 2012 - Lecture 02 - Big-O Notation (Asymptotic Notation)](https://www.youtube.com/watch?v=gSyDMtdPNpU&index=2&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b)
