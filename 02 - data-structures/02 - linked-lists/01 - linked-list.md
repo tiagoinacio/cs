@@ -2,11 +2,11 @@
 
 Linked lists, it's named kind of like links in a chain, right, so we've got a head pointer that points to a node that then has some data and points to another node, points to another node and eventually points to one that doesn't point any farther.
 
-<img src="./singly-linked-list.png" width="400" />
+<img src="./assets/singly-linked-list.png" width="400" />
 
 # Operations
 
-<img src="./linked-list-api.png" width="400" />
+<img src="./assets/linked-list-api.png" width="400" />
 
 ## PushFront
 
@@ -108,63 +108,4 @@ But PopBack is still O(n) because tail pointer does not point to the previous no
 
 ## Order of common operations
 
-<img src="./order-of-operations.png" width="350px" />
-
-# Doubly-Linked List
-
-Bi-directional pointers, to the next node and previous node.
-
-The Linked-List contains a key, next pointer a previous pointer to go forward or go backwards.
-
-PopBack is now order 1, constant-time.
-
-## PushBack(key)
-
-```
-node <- new node
-node.key <- key
-node.next <- nil
-if tail = nil
-    head <- tail <- node
-    node.prev = nil
-else:
-    tail.next = node
-    node.prev = tail
-    tail = node
-```
-
-## PopBack()
-
-```
-if head = nil:
-    ERROR: emtpy list
-if head = tail:
-    head <- tail <- nil
-else:
-    tail <- tail.prev
-    tail.next <- nil
-```
-
-## AddAfter(node, key)
-
-```
-node2 <- new node
-node2.key <- key
-node2.next <- node
-node2.prev <- node.prev
-node.prev <- node2
-if node2.prev != nil:
-    node2.prev.next <- node2
-if head = node:
-    head <- node2
-```
-
-## Operations Time
-
-<img src="./doubly-linked-list.png" width="300px" />
-
- Reference: [Coursera](https://www.coursera.org/learn/data-structures/lecture/kHhgK/singly-linked-lists)
-
- # Why linked lists are bad (Bjorn)
-
- https://www.youtube.com/watch?v=YQs6IC-vgmo
+<img src="./assets/order-of-operations.png" width="350px" />
