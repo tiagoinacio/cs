@@ -4,6 +4,12 @@ Linked lists, it's named kind of like links in a chain, right, so we've got a he
 
 <img src="./assets/singly-linked-list.png" width="400" />
 
+A linked list is a collection of nodes that are connected by links. Linked list contains node which store the data items and the address to the next node. The first node is usually referred to as the head node and the last node is referred to as the tail node. The pointer of the head node points to the next node and the pointer of the tail node points to Null.
+
+<img src="./assets/linked-list.png" width="400" />
+
+The dynamics of this data structure makes it easier to add or remove nodes from the end. In order to add/remove a node, you just need to keep track of the previous node and the node after and adjust the pointers accordingly.
+
 # Operations
 
 <img src="./assets/linked-list-api.png" width="400" />
@@ -109,3 +115,9 @@ But PopBack is still O(n) because tail pointer does not point to the previous no
 ## Order of common operations
 
 <img src="./assets/order-of-operations.png" width="350px" />
+
+# Resources:
+
+[Coursera](https://www.coursera.org)
+
+[Introduction to data structures](https://medium.com/swlh/introduction-to-data-structures-9134b7d064a6)

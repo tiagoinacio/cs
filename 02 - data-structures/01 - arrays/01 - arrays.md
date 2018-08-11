@@ -2,6 +2,12 @@
 
 Array is a contiguous area of memory either on the stack or on the heap, broken down into equal sized elements, and each of those elements is indexed by contigous integer.
 
+A basic data structure which one uses in a day to day programming is an array. An array can hold a fixed number of containers to store data and operations could be performed on that data according to the user’s needs.
+
+![Array](./assets/array.png)
+
+In the picture above, an array is defined with the name arrayName and has an integer data type. The number below in the bold shows the memory address each container of an array is assigned to. The important thing here to remember is an array index always starts at 0 and ends at (total array size -1). So, let’s just say you defined an array of length 5, arrayName[5], then the indexes of this array would be arrayName[0], arrayName[1], arrayName[2], arrayName[3], arrayName[4].
+
 Simplest arrays are fixed size (immutable), which that we can't add or remove elements.
 
 It can be zero based indexed or one based indexed.
@@ -30,3 +36,9 @@ If we need to remove or add at the end, that is done in constant-time, order 1 o
 # Space
 
 Arrays are contiguous in memory, so proximity helps performance. Space needed = (array capacity, which is >= n) * size of item, but even if we have 2n, we still get O(n).
+
+# Resources:
+
+[Coursera](https://www.coursera.org)
+
+[Introduction to data structures](https://medium.com/swlh/introduction-to-data-structures-9134b7d064a6)

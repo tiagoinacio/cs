@@ -3,6 +3,8 @@
 The stack data structure is precisely what it sounds like: a stack of data. In certain types of problems, it can be favorable to store data in a stack rather than in an array.
 A stack uses LIFO (last-in first-out) ordering. That is, as in a stack of dinner plates, the most recent item added to the stack is the  rst item to be removed.
 
+![Stack](./assets/stack.png)
+
 It uses the following operations:
 
 Unlike an array, a stack does not offer constant-time access to the ith item. However, it does allow constant­ time adds and removes, as it doesn't require shifting elements around.
@@ -19,3 +21,17 @@ Abstract data type with the following operations:
 One case where stacks are often useful is in certain recursive algorithms. Sometimes you need to push temporary data onto a stack as you recurse, but then remove them as you backtrack (for example, because the recursive check failed). A stack offers an intuitive way to do this.
 
 A stack can also be used to implement a recursive algorithm iteratively.
+
+# Support for Linked Lists for different programming languages:
+
+Java :- Java has an inbuilt class called Stack which can be used to implement stack data structures.
+
+C++ :- Like Java, C++ has also a Standard Template Library called stack for linked list implementation.
+
+Python :- Python does not have an explicit stack class, but lists can be implemented as stacks.
+
+# Resources:
+
+[Coursera](https://www.coursera.org)
+
+[Introduction to data structures](https://medium.com/swlh/introduction-to-data-structures-9134b7d064a6)

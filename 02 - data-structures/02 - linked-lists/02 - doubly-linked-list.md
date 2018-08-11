@@ -1,5 +1,11 @@
 # Doubly-Linked List
 
+A doubly linked list is not much different from a singly linked list, the only thing that sets them apart is the pointer to the previous node. The picture below can give you a brief idea of what the structure should look like.
+
+![Doubly linked list](./assets/doubly-ll.png)
+
+In the case of a doubly linked list, the previous pointer of the head node points to Null and the next pointer of the tail points to Null. The previous pointer makes it easier to traverse in either direction. So, node addition and removal become super easy, all you need to do is keep track of the previous node and the next node and adjust the pointer accordingly.
+
 Bi-directional pointers, to the next node and previous node.
 
 The Linked-List contains a key, next pointer a previous pointer to go forward or go backwards.
@@ -51,4 +57,10 @@ if head = node:
 
 <img src="./assets/doubly-linked-list.png" width="300px" />
 
- Reference: [Coursera](https://www.coursera.org/learn/data-structures/lecture/kHhgK/singly-linked-lists)
+Reference: [Coursera](https://www.coursera.org/learn/data-structures/lecture/kHhgK/singly-linked-lists)
+
+# Resources:
+
+[Coursera](https://www.coursera.org)
+
+[Introduction to data structures](https://medium.com/swlh/introduction-to-data-structures-9134b7d064a6)
