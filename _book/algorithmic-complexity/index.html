@@ -1,0 +1,1068 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Algorithmic Complexity · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="./" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part I</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="./">
+            
+                <a href="./#introduction">
+            
+                    
+                    Algorithmic Complexity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="./">
+            
+                <a href="./#complexity-analysis">
+            
+                    
+                    Complexity analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="./">
+            
+                <a href="./#asymptotic-behavior">
+            
+                    
+                    Asymptotic behavior
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="./">
+            
+                <a href="./#complexity">
+            
+                    
+                    Complexity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="./">
+            
+                <a href="./#theta">
+            
+                    
+                    Theta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="./">
+            
+                <a href="./#time-complexity">
+            
+                    
+                    Time Complexity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="./">
+            
+                <a href="./#big-o-notation">
+            
+                    
+                    Big-O Notation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="./">
+            
+                <a href="./#upper-bound---o">
+            
+                    
+                    Upper Bound (o)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="./">
+            
+                <a href="./#tight-bound---θ">
+            
+                    
+                    Tight Bound (θ)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="./">
+            
+                <a href="./#lower-bound---ω--ω">
+            
+                    
+                    Lower Bound (ω)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part II</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../data-structures/">
+            
+                <a href="../data-structures/">
+            
+                    
+                    Data Structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../data-structures/">
+            
+                <a href="../data-structures/#introduction">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../data-structures/arrays/">
+            
+                <a href="../data-structures/arrays/#introduction">
+            
+                    
+                    Arrays
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../data-structures/arrays/">
+            
+                <a href="../data-structures/arrays/#definition">
+            
+                    
+                    Definition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../data-structures/arrays/">
+            
+                <a href="../data-structures/arrays/#applications">
+            
+                    
+                    Applications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../data-structures/arrays/">
+            
+                <a href="../data-structures/arrays/#element-identifier-and-addressing-formulas">
+            
+                    
+                    Element identifier and addressing formulas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../data-structures/arrays/">
+            
+                <a href="../data-structures/arrays/#one-dimensional-arrays">
+            
+                    
+                    One-Dimensional Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../data-structures/arrays/">
+            
+                <a href="../data-structures/arrays/#multi-dimensional-arrays">
+            
+                    
+                    Multi-Dimensional Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.6" data-path="../data-structures/arrays/">
+            
+                <a href="../data-structures/arrays/#jagged-arrays">
+            
+                    
+                    Jagged Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.7" data-path="../data-structures/arrays/">
+            
+                <a href="../data-structures/arrays/#resizable-arrays">
+            
+                    
+                    Resizable Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.8" data-path="../data-structures/arrays/">
+            
+                <a href="../data-structures/arrays/#efficiency">
+            
+                    
+                    Efficiency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.9" data-path="../data-structures/arrays/">
+            
+                <a href="../data-structures/arrays/#dimension">
+            
+                    
+                    Dimension
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../data-structures/linked-lists/">
+            
+                <a href="../data-structures/linked-lists/#introduction">
+            
+                    
+                    Linked Lists
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="../data-structures/linked-lists/">
+            
+                <a href="../data-structures/linked-lists/#definition">
+            
+                    
+                    Definition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="../data-structures/linked-lists/">
+            
+                <a href="../data-structures/linked-lists/#disadvantages">
+            
+                    
+                    Disadvantages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3" data-path="../data-structures/linked-lists/">
+            
+                <a href="../data-structures/linked-lists/#singly-linked-list">
+            
+                    
+                    Singly linked list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.4" data-path="../data-structures/linked-lists/">
+            
+                <a href="../data-structures/linked-lists/#doubly-linked-list">
+            
+                    
+                    Doubly linked list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.5" data-path="../data-structures/linked-lists/">
+            
+                <a href="../data-structures/linked-lists/#multiply-linked-list">
+            
+                    
+                    Multiply linked list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.6" data-path="../data-structures/linked-lists/">
+            
+                <a href="../data-structures/linked-lists/#circular-linked-list">
+            
+                    
+                    Circular linked list
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Algorithmic Complexity</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="introduction">Introduction</h1>
+<h2 id="complexity-analysis">Complexity analysis</h2>
+<p>Algorithm complexity is just a way to formally measure how fast a program or algorithm runs.</p>
+<p>We want to compare algorithms in terms of just what they are: Ideas of how something is computed. Counting milliseconds won&apos;t help us in that. It&apos;s quite possible that a bad algorithm written in a low-level programming language such as assembly runs much quicker than a good algorithm written in a high-level programming language such as Python or Ruby.</p>
+<p>Complexity analysis is also a tool that allows us to explain how an algorithm behaves as the input grows larger. If we feed it a different input, how will the algorithm behave? If our algorithm takes 1 second to run for an input of size 1000, how will it behave if I double the input size? Will it run just as fast, half as fast, or four times slower?</p>
+<h2 id="worst-case-analysis">Worst-case analysis</h2>
+<p>When analyzing algorithms, we often consider the worst-case scenario - worst-case analysis. In complexity analysis we only care about what happens to the instruction-counting function as the program input (n) grows large. This really goes along with the previous ideas of &quot;worst-case scenario&quot; behavior: We&apos;re interested in how our algorithm behaves when treated badly; when it&apos;s challenged to do something hard. Notice that this is really useful when comparing algorithms. If an algorithm beats another algorithm for a large input, it&apos;s most probably true that the faster algorithm remains faster when given an easier, smaller input. From the terms that we are considering, we&apos;ll drop all the terms that grow slowly and only keep the ones that grow fast as n becomes larger.</p>
+<p>It makes some sense to drop multiplicative constant, such as in <code>6N</code>, we drop the constant <code>6</code>. If we think about how different programming languages compile. The &quot;array lookup&quot; statement in one language may compile to different instructions in different programming languages. For example, in C, doing A[ i ] does not include a check that i is within the declared array size, while in Pascal it does.</p>
+<h2 id="asymptotic-behavior">Asymptotic behavior</h2>
+<p>This filter of &quot;dropping all factors&quot; and of &quot;keeping the largest growing term&quot; as described above is what we call asymptotic behavior. So the asymptotic behavior of f( n ) = 2n + 8 is described by the function f( n ) = n. Mathematically speaking, what we&apos;re saying here is that we&apos;re interested in the limit of function f as n tends to infinity. (On a side note, in a strict mathematical setting, we would not be able to drop the constants in the limit; but for computer science purposes, we want to do that for the reasons described above.)</p>
+<p>Let us find the asymptotic behavior of the following example functions by dropping the constant factors and by keeping the terms that grow the fastest.</p>
+<p><code>f(n) = 5n + 12 gives f(n) = n.</code></p>
+<p>By using the exact same reasoning as above.</p>
+<p><code>f(n) = 109 gives f(n) = 1.</code></p>
+<p>We&apos;re dropping the multiplier 109 * 1, but we still have to put a 1 here to indicate that this function has a non-zero value.</p>
+<p><code>f(n) = n2 + 3n + 112 gives f(n) = n2</code></p>
+<p>Here, n2 grows larger than 3n for sufficiently large n, so we&apos;re keeping that.</p>
+<p><code>f(n) = n3 + 1999n + 1337 gives f(n) = n3</code></p>
+<p>Even though the factor in front of n is quite large, we can still find a large enough n so that n3 is bigger than 1999n. As we&apos;re interested in the behavior for very large values of n, we only keep n3.</p>
+<p><code>f(n) = n + sqrt(n) gives f(n) = n</code></p>
+<p>This is so because n grows faster than sqrt( n ) as we increase n.</p>
+<h2 id="complexity">Complexity</h2>
+<p>Since we can drop all these decorative constants, it&apos;s pretty easy to tell the asymptotic behavior of the instruction-counting function of a program. In fact, any program that doesn&apos;t have any loops will have f( n ) = 1, since the number of instructions it needs is just a constant (unless it uses recursion;). Any program with a single loop which goes from 1 to n will have f( n ) = n, since it will do a constant number of instructions before the loop, a constant number of instructions after the loop, and a constant number of instructions within the loop which all run n times.</p>
+<p>The following PHP program checks to see if a particular value exists within an array A of size n:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+    $exists = <span class="hljs-keyword">false</span>;
+    <span class="hljs-keyword">for</span> ( $i = <span class="hljs-number">0</span>; $i &lt; n; ++$i ) {
+        <span class="hljs-keyword">if</span> ( $A[ $i ] == $value ) {
+            $exists = <span class="hljs-keyword">true</span>;
+            <span class="hljs-keyword">break</span>;
+        }
+    }
+<span class="hljs-meta">?&gt;</span>
+</code></pre>
+<p>This method of searching for a value within an array is called linear search. This is a reasonable name, as this program has f( n ) = n. You may notice that there&apos;s a &quot;break&quot; statement here that may make the program terminate sooner, even after a single iteration. But recall that we&apos;re interested in the worst-case scenario, which for this program is for the array A to not contain the value. So we still have f( n ) = n.</p>
+<p>Let&apos;s look at a Python program which adds two array elements together to produce a sum which it stores in another variable:</p>
+<pre><code class="lang-python">v = a[ <span class="hljs-number">0</span> ] + a[ <span class="hljs-number">1</span> ]
+</code></pre>
+<p>Here we have a constant number of instructions, so we have f( n ) = 1.</p>
+<p>The following program in C++ checks to see if a vector (a fancy array) named A of size n contains the same two values anywhere within it:</p>
+<pre><code class="lang-c++"><span class="hljs-keyword">bool</span> duplicate = <span class="hljs-literal">false</span>;
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; ++i ) {
+    <span class="hljs-keyword">for</span> ( <span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; n; ++j ) {
+        <span class="hljs-keyword">if</span> ( i != j &amp;&amp; A[ i ] == A[ j ] ) {
+            duplicate = <span class="hljs-literal">true</span>;
+            <span class="hljs-keyword">break</span>;
+        }
+    }
+    <span class="hljs-keyword">if</span> ( duplicate ) {
+        <span class="hljs-keyword">break</span>;
+    }
+}
+</code></pre>
+<p>As here we have two nested loops within each other, we&apos;ll have an asymptotic behavior described by f( n ) = n2.</p>
+<blockquote>
+<p>Simple programs can be analyzed by counting the nested loops of the program. A single loop over n items yields f( n ) = n. A loop within a loop yields f( n ) = n2. A loop within a loop within a loop yields f( n ) = n3.</p>
+</blockquote>
+<p>If we have a program that calls a function within a loop and we know the number of instructions the called function performs, it&apos;s easy to determine the number of instructions of the whole program. Indeed, let&apos;s take a look at this C example:</p>
+<pre><code class="lang-c"><span class="hljs-keyword">int</span> i;
+<span class="hljs-keyword">for</span> ( i = <span class="hljs-number">0</span>; i &lt; n; ++i ) {
+    f( n );
+}
+</code></pre>
+<p>If we know that f( n ) is a function that performs exactly n instructions, we can then know that the number of instructions of the whole program is asymptotically n2, as the function is called exactly n times.</p>
+<blockquote>
+<p>Given a series of for loops that are sequential, the slowest of them determines the asymptotic behavior of the program. Two nested loops followed by a single loop is asymptotically the same as the nested loops alone, because the nested loops dominate the simple loop.</p>
+</blockquote>
+<h3 id="theta">Theta</h3>
+<p>When we&apos;ve figured out the exact such f asymptotically, we&apos;ll say that our program is &#x398;( f( n ) ). For example, the above programs are &#x398;( 1 ), &#x398;( n2 ) and &#x398;( n2 ) respectively. &#x398;( n ) is pronounced &quot;theta of n&quot;. Sometimes we say that f( n ), the original function counting the instructions including the constants, is &#x398;( something ). For example, we may say that f( n ) = 2n is a function that is &#x398;( n ) &#x2014; nothing new here. We can also write 2n &#x2208; &#x398;( n ), which is pronounced as &quot;two n is theta of n&quot;. Don&apos;t get confused about this notation: All it&apos;s saying is that if we&apos;ve counted the number of instructions a program needs and those are 2n, then the asymptotic behavior of our algorithm is described by n, which we found by dropping the constants. Given this notation, the following are some true mathematical statements:</p>
+<pre><code>n6 + 3n &#x2208; &#x398;( n6 )
+2n + 12 &#x2208; &#x398;( 2n )
+3n + 2n &#x2208; &#x398;( 3n )
+nn + n &#x2208; &#x398;( nn )
+</code></pre><h3 id="time-complexity">Time complexity</h3>
+<p>We call this function, i.e. what we put within &#x398;( here ), the time complexity or just complexity of our algorithm. So an algorithm with &#x398;( n ) is of complexity n. We also have special names for &#x398;( 1 ), &#x398;( n ), &#x398;( n2 ) and &#x398;( log( n ) ) because they occur very often. We say that a &#x398;( 1 ) algorithm is a constant-time algorithm, &#x398;( n ) is linear, &#x398;( n2 ) is quadratic and &#x398;( log( n ) ) is logarithmic.</p>
+<blockquote>
+<p> Programs with a bigger &#x398; run slower than programs with a smaller &#x398;.</p>
+</blockquote>
+<h3 id="big-o-notation">Big-O notation</h3>
+<p>We will be able to say that the behavior of our algorithm will never exceed a certain bound. This will make life easier for us, as we won&apos;t have to specify exactly how fast our algorithm runs, even when ignoring constants the way we did before. All we&apos;ll have to do is find a certain bound.</p>
+<p>A famous problem computer scientists use for teaching algorithms is the sorting problem. In the sorting problem, an array A of size n is given and we are asked to write a program that sorts this array.</p>
+<p>Here is an inefficient way to implement sorting an array in Ruby.</p>
+<pre><code class="lang-ruby">b = []
+n.times <span class="hljs-keyword">do</span>
+    m = a[ <span class="hljs-number">0</span> ]
+    mi = <span class="hljs-number">0</span>
+    a.each_with_index <span class="hljs-keyword">do</span> |element, i|
+        <span class="hljs-keyword">if</span> element &lt; m
+            m = element
+            mi = i
+        <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+    a.delete_at( mi )
+    b &lt;&lt; m
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>This method is called selection sort. It finds the minimum of our array (the array is denoted a above, while the minimum value is denoted m and mi is its index), puts it at the end of a new array (in our case b), and removes it from the original array. Then it finds the minimum between the remaining values of our original array, appends that to our new array so that it now contains two elements, and removes it from our original array. It continues this process until all items have been removed from the original and have been inserted into the new array, which means that the array has been sorted. In this example, we can see that we have two nested loops. The outer loop runs n times, and the inner loop runs once for each element of the array a. While the array a initially has n items, we remove one array item in each iteration. So the inner loop repeats n times during the first iteration of the outer loop, then n - 1 times, then n - 2 times and so forth, until the last iteration of the outer loop during which it only runs once.</p>
+<h3 id="upper-bound---o">Upper bound - O</h3>
+<p>It&apos;s a little harder to evaluate the complexity of this program, as we&apos;d have to figure out the sum 1 + 2 + ... + (n - 1) + n. But we can for sure find an &quot;upper bound&quot; for it. That is, we can alter our program (you can do that in your mind, not in the actual code) to make it worse than it is and then find the complexity of that new program that we derived. If we can find the complexity of the worse program that we&apos;ve constructed, then we know that our original program is at most that bad, or maybe better. That way, if we find out a pretty good complexity for our altered program, which is worse than our original, we can know that our original program will have a pretty good complexity too &#x2013; either as good as our altered program or even better.</p>
+<p>Let&apos;s now think of the way to edit this example program to make it easier to figure out its complexity. But let&apos;s keep in mind that we can only make it worse, i.e. make it take up more instructions, so that our estimate is meaningful for our original program. Clearly we can alter the inner loop of the program to always repeat exactly n times instead of a varying number of times. Some of these repetitions will be useless, but it will help us analyze the complexity of the resulting algorithm. If we make this simple change, then the new algorithm that we&apos;ve constructed is clearly &#x398;( n2 ), because we have two nested loops where each repeats exactly n times. If that is so, we say that the original algorithm is O( n2 ). O( n2 ) is pronounced &quot;big oh of n squared&quot;. What this says is that our program is asymptotically no worse than n2. It may even be better than that, or it may be the same as that. By the way, if our program is indeed &#x398;( n2 ), we can still say that it&apos;s O( n2 ). To help you realize that, imagine altering the original program in a way that doesn&apos;t change it much, but still makes it a little worse, such as adding a meaningless instruction at the beginning of the program. Doing this will alter the instruction-counting function by a simple constant, which is ignored when it comes to asymptotic behavior. So a program that is &#x398;( n2 ) is also O( n2 ).</p>
+<p>But a program that is O( n2 ) may not be &#x398;( n2 ). For example, any program that is &#x398;( n ) is also O( n2 ) in addition to being O( n ). If we imagine the that a &#x398;( n ) program is a simple for loop that repeats n times, we can make it worse by wrapping it in another for loop which repeats n times as well, thus producing a program with f( n ) = n2. To generalize this, any program that is &#x398;( a ) is O( b ) when b is worse than a. Notice that our alteration to the program doesn&apos;t need to give us a program that is actually meaningful or equivalent to our original program. It only needs to perform more instructions than the original for a given n. All we&apos;re using it for is counting instructions, not actually solving our problem.</p>
+<p>So, saying that our program is O( n2 ) is being on the safe side: We&apos;ve analyzed our algorithm, and we&apos;ve found that it&apos;s never worse than n2. But it could be that it&apos;s in fact n2. This gives us a good estimate of how fast our program runs. Let&apos;s go through a few examples to help you familiarize yourself with this new notation.</p>
+<pre><code>A &#x398;( n ) algorithm is O( n )
+We know that this is true as our original program was &#x398;( n ). We can achieve O( n ) without altering our program at all.
+
+A &#x398;( n ) algorithm is O( n2 )
+As n2 is worse than n, this is true.
+
+A &#x398;( n2 ) algorithm is O( n3 )
+As n3 is worse than n2, this is true.
+
+A &#x398;( n ) algorithm is O( 1 )
+As 1 is not worse than n, this is false. If a program takes n instructions asymptotically (a linear number of instructions), we can&apos;t make it worse and have it take only 1 instruction asymptotically (a constant number of instructions).
+
+A O( 1 ) algorithm is &#x398;( 1 )
+This is true as the two complexities are the same.
+
+A O( n ) algorithm is &#x398;( 1 )
+This may or may not be true depending on the algorithm. In the general case it&apos;s false. If an algorithm is &#x398;( 1 ), then it certainly is O( n ). But if it&apos;s O( n ) then it may not be &#x398;( 1 ). For example, a &#x398;( n ) algorithm is O( n ) but not &#x398;( 1 ).
+</code></pre><h3 id="tight-bound---&#x3B8;">Tight bound - &#x398;</h3>
+<p>Because the O-complexity of an algorithm gives an upper bound for the actual complexity of an algorithm, while &#x398; gives the actual complexity of an algorithm, we sometimes say that the &#x398; gives us a tight bound. If we know that we&apos;ve found a complexity bound that is not tight, we can also use a lower-case o to denote that. For example, if an algorithm is &#x398;( n ), then its tight complexity is n. Then this algorithm is both O( n ) and O( n2 ). As the algorithm is &#x398;( n ), the O( n ) bound is a tight one. But the O( n2 ) bound is not tight, and so we can write that the algorithm is o( n2 ), which is pronounced &quot;small o of n squared&quot; to illustrate that we know our bound is not tight. It&apos;s better if we can find tight bounds for our algorithms, as these give us more information about how our algorithm behaves, but it&apos;s not always easy to do.</p>
+<pre><code>A &#x398;( n ) algorithm for which we found a O( n ) upper bound.
+In this case, the &#x398; complexity and the O complexity are the same, so the bound is tight.
+
+A &#x398;( n2 ) algorithm for which we found a O( n3 ) upper bound.
+Here we see that the O complexity is of a larger scale than the &#x398; complexity so this bound is not tight. Indeed, a bound of O( n2 ) would be a tight one. So we can write that the algorithm is o( n3 ).
+
+A &#x398;( 1 ) algorithm for which we found an O( n ) upper bound.
+Again we see that the O complexity is of a larger scale than the &#x398; complexity so we have a bound that isn&apos;t tight. A bound of O( 1 ) would be a tight one. So we can point out that the O( n ) bound is not tight by writing it as o( n ).
+
+A &#x398;( n ) algorithm for which we found an O( 1 ) upper bound.
+We must have made a mistake in calculating this bound, as it&apos;s wrong. It&apos;s impossible for a &#x398;( n ) algorithm to have an upper bound of O( 1 ), as n is a larger complexity than 1. Remember that O gives an upper bound.
+
+A &#x398;( n ) algorithm for which we found an O( 2n ) upper bound.
+This may seem like a bound that is not tight, but this is not actually true. This bound is in fact tight. Recall that the asymptotic behavior of 2n and n are the same, and that O and &#x398; are only concerned with asymptotic behavior. So we have that O( 2n ) = O( n ) and therefore this bound is tight as the complexity is the same as the &#x398;.
+</code></pre><blockquote>
+<p>It&apos;s easier to figure out the O-complexity of an algorithm than its &#x398;-complexity.</p>
+</blockquote>
+<h3 id="lower-bound---&#x3C9;--&#x3C9;">Lower Bound - &#x3A9; / &#x3C9;</h3>
+<p>Let&apos;s introduce just two more symbols before we move on to a few examples. These are easy now that you know &#x398;, O and o, and we won&apos;t use them much later in this article, but it&apos;s good to know them now that we&apos;re at it. In the example above, we modified our program to make it worse (i.e. taking more instructions and therefore more time) and created the O notation. O is meaningful because it tells us that our program will never be slower than a specific bound, and so it provides valuable information so that we can argue that our program is good enough. If we do the opposite and modify our program to make it better and find out the complexity of the resulting program, we use the notation &#x3A9;. &#x3A9; therefore gives us a complexity that we know our program won&apos;t be better than. This is useful if we want to prove that a program runs slowly or an algorithm is a bad one. This can be useful to argue that an algorithm is too slow to use in a particular case. For example, saying that an algorithm is &#x3A9;( n3 ) means that the algorithm isn&apos;t better than n3. It might be &#x398;( n3 ), as bad as &#x398;( n4 ) or even worse, but we know it&apos;s at least somewhat bad. So &#x3A9; gives us a lower bound for the complexity of our algorithm. Similarly to &#x3BF;, we can write &#x3C9; if we know that our bound isn&apos;t tight. For example, a &#x398;( n3 ) algorithm is &#x3BF;( n4 ) and &#x3C9;( n2 ). &#x3A9;( n ) is pronounced &quot;big omega of n&quot;, while &#x3C9;( n ) is pronounced &quot;small omega of n&quot;.</p>
+<p>For the following &#x398; complexities write down a tight and a non-tight O bound, and a tight and non-tight &#x3A9; bound of your choice, providing they exist.</p>
+<pre><code>&#x398;( 1 ) - The tight bounds will be O( 1 ) and &#x3A9;( 1 ). A non-tight O-bound would be O( n ). Recall that O gives us an upper bound. As n is of larger scale than 1 this is a non-tight bound and we can write it as o( n ) as well. But we cannot find a non-tight bound for &#x3A9;, as we can&apos;t get lower than 1 for these functions. So we&apos;ll have to do with the tight bound.
+
+&#x398;( sqrt( n ) ) - The tight bounds will have to be the same as the &#x398; complexity, so they are O( sqrt( n ) ) and &#x3A9;( sqrt( n ) ) respectively. For non-tight bounds we can have O( n ), as n is larger than sqrt( n ) and so it is an upper bound for sqrt( n ). As we know this is a non-tight upper bound, we can also write it as o( n ). For a lower bound that is not tight, we can simply use &#x3A9;( 1 ). As we know that this bound is not tight, we can also write it as &#x3C9;( 1 ).
+
+&#x398;( n ) - The tight bounds are O( n ) and &#x3A9;( n ). Two non-tight bounds could be &#x3C9;( 1 ) and o( n3 ). These are in fact pretty bad bounds, as they are far from the original complexities, but they are still valid using our definitions.
+
+&#x398;( n2 ) - The tight bounds are O( n2 ) and &#x3A9;( n2 ). For non-tight bounds we could again use &#x3C9;( 1 ) and o( n3 ) as in our previous example.
+
+&#x398;( n3 ) - The tight bounds are O( n3 ) and &#x3A9;( n3 ) respectively. Two non-tight bounds could be &#x3C9;( sqrt( n ) n2 ) and o( sqrt( n ) n3 ). Although these bounds are not tight, they&apos;re better than the ones we gave above.
+</code></pre><p>The reason we use O and &#x3A9; instead of &#x398; even though O and &#x3A9; can also give tight bounds is that we may not be able to tell if a bound we&apos;ve found is tight, or we may just not want to go through the process of scrutinizing it so much.</p>
+<table>
+<thead>
+<tr>
+<th>Asymptotic comparison operator</th>
+<th>Numeric comparison operator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Our algorithm is o( something )</td>
+<td>A number is &lt; something</td>
+</tr>
+<tr>
+<td>Our algorithm is O( something )</td>
+<td>A number is &#x2264; something</td>
+</tr>
+<tr>
+<td>Our algorithm is &#x398;( something )</td>
+<td>A number is = something</td>
+</tr>
+<tr>
+<td>Our algorithm is &#x3A9;( something )</td>
+<td>A number is &#x2265; something</td>
+</tr>
+<tr>
+<td>Our algorithm is &#x3C9;( something )</td>
+<td>A number is &gt; something</td>
+</tr>
+</tbody>
+</table>
+<p>While all the symbols O, o, &#x3A9;, &#x3C9; and &#x398; are useful at times, O is the one used more commonly, as it&apos;s easier to determine than &#x398; and more practically useful than &#x3A9;.</p>
+<h1 id="logarithms">Logarithms</h1>
+<p>A logarithm is an operation applied to a number that makes it quite smaller &#x2013; much like a square root of a number. So if there&apos;s one thing you want to remember about logarithms is that they take a number and make it much smaller than the original. Now, in the same way that square roots are the inverse operation of squaring something, logarithms are the inverse operation of exponentiating something.</p>
+<p><code>2^x = 1024</code></p>
+<p>We now wish to solve this equation for x. So we ask ourselves: What is the number to which we must raise the base 2 so that we get 1024? That number is 10. Indeed, we have 2^10 = 1024, which is easy to verify. Logarithms help us denote this problem using new notation. In this case, 10 is the logarithm of 1024 and we write this as log( 1024 ) and we read it as &quot;the logarithm of 1024&quot;. Because we&apos;re using 2 as a base, these logarithms are called base 2 logarithms. There are logarithms in other bases.</p>
+<p><img src="assets/logaritmhs.png" alt="Logarithms"></p>
+<p>Solve the equations below. Denote what logarithm you&apos;re finding in each case. Use only logarithms base 2.</p>
+<pre><code>2^x = 64
+By trial and error we can find that x = 6 and so log( 64 ) = 6.
+
+(2^2)^x = 64
+Here we notice that (22)x, by the properties of exponents, can be written as 22x. So we have that 2x = 6 because log( 64 ) = 6 from the previous result and therefore x = 3.
+
+4^x = 4
+Using our knowledge from the previous equation, we can write 4 as 22 and so our equation becomes (22)x = 4 which is the same as 22x = 4. Then we notice that log( 4 ) = 2 because 22 = 4 and therefore we have that 2x = 2. So x = 1. This is readily observed from the original equation, as using an exponent of 1 yields the base as a result.
+
+2^x = 1
+Recall that an exponent of 0 yields a result of 1. So we have log( 1 ) = 0 as 20 = 1, and so x = 0.
+
+2^x + 2^x = 32
+Here we have a sum and so we can&apos;t take the logarithm directly. However we notice that 2x + 2x is the same as 2 * (2x). So we&apos;ve multiplied in yet another two, and therefore this is the same as 2x + 1 and now all we have to do is solve the equation 2x + 1 = 32. We find that log( 32 ) = 5 and so x + 1 = 5 and therefore x = 4.
+
+(2^x) * (2^x) = 64
+We&apos;re multiplying together two powers of 2, and so we can join them by noticing that (2x) * (2x) is the same as 22x. Then all we need to do is to solve the equation 22x = 64 which we already solved above and so x = 3.
+</code></pre><p>For competition algorithms implemented in C++, once you&apos;ve analyzed your complexity, you can get a rough estimate of how fast your program will run by expecting it to perform about 1,000,000 operations per second, where the operations you count are given by the asymptotic behavior function describing your algorithm. For example, a &#x398;( n ) algorithm takes about a second to process the input for n = 1,000,000.</p>
+<h1 id="recursive-complexity">Recursive complexity</h1>
+<p>A recursive function is a function that calls itself. Can we analyze its complexity? The following function, written in Python, evaluates the factorial of a given number. The factorial of a positive integer number is found by multiplying it with all the previous positive integers together. For example, the factorial of 5 is 5 <em> 4 </em> 3 <em> 2 </em> 1. We denote that &quot;5!&quot; and pronounce it &quot;five factorial&quot;.</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">factorial</span><span class="hljs-params">( n )</span>:</span>
+    <span class="hljs-keyword">if</span> n == <span class="hljs-number">1</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
+    <span class="hljs-keyword">return</span> n * factorial( n - <span class="hljs-number">1</span> )
+</code></pre>
+<p>This function doesn&apos;t have any loops in it, but its complexity isn&apos;t constant either. What we need to do to find out its complexity is again to go about counting instructions. Clearly, if we pass some n to this function, it will execute itself n times. If you&apos;re unsure about that, run it &quot;by hand&quot; now for n = 5 to validate that it actually works. For example, for n = 5, it will execute 5 times, as it will keep decreasing n by 1 in each call. We can see therefore that this function is then &#x398;( n ).</p>
+<p><img src="assets/factorial.png" alt="Factorial"></p>
+<p>If you&apos;re unsure about this fact, remember that you can always find the exact complexity by counting instructions. If you wish, you can now try to count the actual instructions performed by this function to find a function f( n ) and see that it&apos;s indeed linear (recall that linear means &#x398;( n )).</p>
+<h1 id="logarithmic-complexity">Logarithmic complexity</h1>
+<p>One famous problem in computer science is that of searching for a value within an array. We solved this problem earlier for the general case. This problem becomes interesting if we have an array which is sorted and we want to find a given value within it. One method to do that is called binary search. We look at the middle element of our array: If we find it there, we&apos;re done. Otherwise, if the value we find there is bigger than the value we&apos;re looking for, we know that our element will be on the left part of the array. Otherwise, we know it&apos;ll be on the right part of the array. We can keep cutting these smaller arrays in halves until we have a single element to look at. Here&apos;s the method using pseudocode:</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">binarySearch</span><span class="hljs-params">( A, n, value )</span>:</span>
+    <span class="hljs-keyword">if</span> n = <span class="hljs-number">1</span>:
+        <span class="hljs-keyword">if</span> A[ <span class="hljs-number">0</span> ] = value:
+            <span class="hljs-keyword">return</span> true
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">return</span> false
+    <span class="hljs-keyword">if</span> value &lt; A[ n / <span class="hljs-number">2</span> ]:
+        <span class="hljs-keyword">return</span> binarySearch( A[ <span class="hljs-number">0.</span>..( n / <span class="hljs-number">2</span> - <span class="hljs-number">1</span> ) ], n / <span class="hljs-number">2</span> - <span class="hljs-number">1</span>, value )
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> value &gt; A[ n / <span class="hljs-number">2</span> ]:
+        <span class="hljs-keyword">return</span> binarySearch( A[ ( n / <span class="hljs-number">2</span> + <span class="hljs-number">1</span> )...n ], n / <span class="hljs-number">2</span> - <span class="hljs-number">1</span>, value )
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> true
+</code></pre>
+<p><img src="assets/binary-search.png" alt="Binary search"></p>
+<p>This pseudocode is a simplification of the actual implementation. In practice, this method is easier described than implemented, as the programmer needs to take care of some implementation issues. There are off-by-one errors and the division by 2 may not always produce an integer value and so it&apos;s necessary to floor() or ceil() the value. But we can assume for our purposes that it will always succeed, and we&apos;ll assume our actual implementation in fact takes care of the off-by-one errors, as we only want to analyze the complexity of this method.</p>
+<p>Let us now attempt to analyze this algorithm. Again, we have a recursive algorithm in this case. Let&apos;s assume, for simplicity, that the array is always cut in exactly a half, ignoring just now the + 1 and - 1 part in the recursive call. By now you should be convinced that a little change such as ignoring + 1 and - 1 won&apos;t affect our complexity results. This is a fact that we would normally have to prove if we wanted to be prudent from a mathematical point of view, but practically it is intuitively obvious. Let&apos;s assume that our array has a size that is an exact power of 2, for simplicity. Again this assumption doesn&apos;t change the final results of our complexity that we will arrive at. The worst-case scenario for this problem would happen when the value we&apos;re looking for does not occur in our array at all. In that case, we&apos;d start with an array of size n in the first call of the recursion, then get an array of size n / 2 in the next call. Then we&apos;ll get an array of size n / 4 in the next recursive call, followed by an array of size n / 8 and so forth. In general, our array is split in half in every call, until we reach 1. So, let&apos;s write the number of elements in our array for every call:</p>
+<pre><code>0th iteration: n
+1st iteration: n / 2
+2nd iteration: n / 4
+3rd iteration: n / 8
+...
+ith iteration: n / 2^i
+...
+last iteration: 1
+</code></pre><p>Notice that in the i-th iteration, our array has n / 2^i elements. This is because in every iteration we&apos;re cutting our array into half, meaning we&apos;re dividing its number of elements by two. This translates to multiplying the denominator with a 2. If we do that i times, we get n / 2^i. Now, this procedure continues and with every larger i we get a smaller number of elements until we reach the last iteration in which we have only 1 element left. If we wish to find i to see in what iteration this will take place, we have to solve the following equation:</p>
+<p><code>1 = n / 2^i</code></p>
+<p>This will only be true when we have reached the final call to the binarySearch() function, not in the general case. So solving for i here will help us find in which iteration the recursion will finish. Multiplying both sides by 2^i we get:</p>
+<p><code>2^i = n</code></p>
+<p>Now, this equation should look familiar if you read the logarithms section above. Solving for i we have:</p>
+<p><code>i = log( n )</code></p>
+<p>This tells us that the number of iterations required to perform a binary search is log( n ) where n is the number of elements in the original array.</p>
+<p>If you think about it, this makes some sense. For example, take n = 32, an array of 32 elements. How many times do we have to cut this in half to get only 1 element? We get: 32 &#x2192; 16 &#x2192; 8 &#x2192; 4 &#x2192; 2 &#x2192; 1. We did this 5 times, which is the logarithm of 32. Therefore, the complexity of binary search is &#x398;( log( n ) ).</p>
+<p>This last result allows us to compare binary search with linear search, our previous method. Clearly, as log( n ) is much smaller than n, it is reasonable to conclude that binary search is a much faster method to search within an array then linear search, so it may be advisable to keep our arrays sorted if we want to do many searches within them.</p>
+<blockquote>
+<p>Improving the asymptotic running time of a program often tremendously increases its performance, much more than any smaller &quot;technical&quot; optimizations such as using a faster programming language.</p>
+</blockquote>
+<h1 id="optimal-sorting">Optimal sorting</h1>
+<p>We looked at a sorting implementation above called a selection sort. We mentioned that selection sort is not optimal. An optimal algorithm is an algorithm that solves a problem in the best possible way, meaning there are no better algorithms for this. This means that all other algorithms for solving the problem have a worse or equal complexity to that optimal algorithm. There may be many optimal algorithms for a problem that all share the same complexity. The sorting problem can be solved optimally in various ways. We can use the same idea as with binary search to sort quickly. This sorting method is called mergesort.</p>
+<p>To perform a mergesort, we will first need to build a helper function that we will then use to do the actual sorting. We will make a merge function which takes two arrays that are both already sorted and merges them together into a big sorted array. This is easily done:</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">merge</span><span class="hljs-params">( A, B )</span>:</span>
+    <span class="hljs-keyword">if</span> empty( A ):
+        <span class="hljs-keyword">return</span> B
+    <span class="hljs-keyword">if</span> empty( B ):
+        <span class="hljs-keyword">return</span> A
+    <span class="hljs-keyword">if</span> A[ <span class="hljs-number">0</span> ] &lt; B[ <span class="hljs-number">0</span> ]:
+        <span class="hljs-keyword">return</span> concat( A[ <span class="hljs-number">0</span> ], merge( A[ <span class="hljs-number">1.</span>..A_n ], B ) )
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> concat( B[ <span class="hljs-number">0</span> ], merge( A, B[ <span class="hljs-number">1.</span>..B_n ] ) )
+</code></pre>
+<p>The concat function takes an item, the &quot;head&quot;, and an array, the &quot;tail&quot;, and builds up and returns a new array which contains the given &quot;head&quot; item as the first thing in the new array and the given &quot;tail&quot; item as the rest of the elements in the array. For example, concat( 3, [ 4, 5, 6 ] ) returns [ 3, 4, 5, 6 ]. We use A_n and B_n to denote the sizes of arrays A and B respectively.</p>
+<p>Analyzing this algorithm reveals that it has a running time of &#x398;( n ), where n is the length of the resulting array (n = A_n + B_n).</p>
+<p>Utilizing this function we can build a better sorting algorithm. The idea is the following: We split the array into two parts. We sort each of the two parts recursively, then we merge the two sorted arrays into one big array. In pseudocode:</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mergeSort</span><span class="hljs-params">( A, n )</span>:</span>
+    <span class="hljs-keyword">if</span> n = <span class="hljs-number">1</span>:
+        <span class="hljs-keyword">return</span> A <span class="hljs-comment"># it is already sorted</span>
+    middle = floor( n / <span class="hljs-number">2</span> )
+    leftHalf = A[ <span class="hljs-number">1.</span>..middle ]
+    rightHalf = A[ ( middle + <span class="hljs-number">1</span> )...n ]
+    <span class="hljs-keyword">return</span> merge( mergeSort( leftHalf, middle ), mergeSort( rightHalf, n - middle ) )
+</code></pre>
+<p>In every step of mergeSort, we&apos;re splitting the array into two halves of equal size, similarly to binarySearch. However, in this case, we maintain both halves throughout execution. We then apply the algorithm recursively in each half. After the recursion returns, we apply the merge operation on the result which takes &#x398;( n ) time.</p>
+<p>So, we split the original array into two arrays of size n / 2 each. Then we merge those arrays, an operation that merges n elements and thus takes &#x398;( n ) time.</p>
+<p><img src="assets/merge-sort.png" alt="Merge sort"></p>
+<p>Let&apos;s see what&apos;s going on here. Each circle represents a call to the mergeSort function. The number written in the circle indicates the size of the array that is being sorted. The top blue circle is the original call to mergeSort, where we get to sort an array of size n. The arrows indicate recursive calls made between functions. The original call to mergeSort makes two calls to mergeSort on two arrays, each of size n / 2. This is indicated by the two arrows at the top. In turn, each of these calls makes two calls of its own to mergeSort two arrays of size n / 4 each, and so forth until we arrive at arrays of size 1. This diagram is called a recursion tree, because it illustrates how the recursion behaves and looks like a tree (the root is at the top and the leaves are at the bottom, so in reality it looks like an inversed tree).</p>
+<p>Notice that at each row in the above diagram, the total number of elements is n. To see this, take a look at each row individually. The first row contains only one call to mergeSort with an array of size n, so the total number of elements is n. The second row has two calls to mergeSort each of size n / 2. But n / 2 + n / 2 = n and so again in this row the total number of elements is n. In the third row, we have 4 calls each of which is applied on an n / 4-sized array, yielding a total number of elements equal to n / 4 + n / 4 + n / 4 + n / 4 = 4n / 4 = n. So again we get n elements. Now notice that at each row in this diagram the caller will have to perform a merge operation on the elements returned by the callees. For example, the circle indicated with red color has to sort n / 2 elements. To do this, it splits the n / 2-sized array into two n / 4-sized arrays, calls mergeSort recursively to sort those (these calls are the circles indicated with green color), then merges them together. This merge operation requires to merge n / 2 elements. At each row in our tree, the total number of elements merged is n. In the row that we just explored, our function merges n / 2 elements and the function on its right (which is in blue color) also has to merge n / 2 elements of its own. That yields n elements in total that need to be merged for the row we&apos;re looking at.</p>
+<p>By this argument, the complexity for each row is &#x398;( n ). We know that the number of rows in this diagram, also called the depth of the recursion tree, will be log( n ). The reasoning for this is exactly the same as the one we used when analyzing the complexity of binary search. We have log( n ) rows and each of them is &#x398;( n ), therefore the complexity of mergeSort is &#x398;( n <em> log( n ) ). This is much better than &#x398;( n2 ) which is what selection sort gave us (remember that log( n ) is much smaller than n, and so n </em> log( n ) is much smaller than n * n = n2).</p>
+<p>As you saw in this last example, complexity analysis allows us to compare algorithms to see which one is better. Under these circumstances, we can now be pretty certain that merge sort will outperform selection sort for large arrays. This conclusion would be hard to draw if we didn&apos;t have the theoretical background of algorithm analysis that we developed. In practice, indeed sorting algorithms of running time &#x398;( n * log( n ) ) are used. For example, the <a href="http://lxr.free-electrons.com/source/lib/sort.c" target="_blank">Linux kernel uses a sorting algorithm called heapsort</a>, which has the same running time as mergesort which we explored here, namely &#x398;( n log( n ) ) and so is optimal. Notice that we have not proven that these sorting algorithms are optimal. Doing this requires a slightly more involved mathematical argument, but rest assured that they can&apos;t get any better from a complexity point of view.</p>
+<h1 id="formal-definition">Formal definition</h1>
+<p>A function T(N) is O(F(N)) if for some constant <code>c</code> and for values of <code>N</code> greater than some value <code>n0</code>:</p>
+<p><code>T(N) &lt;= c * F(N)</code></p>
+<p>Suppose f(x) and g(x) are two functions defined on some subset of the real numbers. We write</p>
+<p><code>f(x) = O(g(x))</code></p>
+<p>or</p>
+<p><code>f(x) = O(g(x)) for x -&gt; &#x221E;</code></p>
+<p>Intuitively, this means that <code>f</code> does not grow faster than <code>g</code>.</p>
+<h1 id="names-of-bounding-functions">Names of Bounding Functions</h1>
+<p>Big O (O) is the upper bound of a function.</p>
+<p>Big omega (&#x3A9;) is the lower bound of a function.</p>
+<p>Big theta (&#x19F;) is in the middle of Big O and Big &#x3A9;.</p>
+<p><code>g(n) = O(f(n))</code> means <code>C x f(n)</code> is an upper bound on <code>g(n)</code>.</p>
+<p><code>g(n) = &#x3A9;(f(n))</code> means <code>C x f(n)</code> is a lower bound on <code>g(n)</code>.</p>
+<p><code>g(n) = &#x19F;(f(n))</code> means <code>C1 x f(n)</code> is an upper bound on <code>g(n)</code> and <code>C2 x f(n)</code> is a lower bound on <code>g(n)</code>. It&apos;s a tight bound.</p>
+<p><code>C, C1, C2</code> are all constants independent of <code>n</code>.</p>
+<p>This definitions imply a contant <code>n0</code> beyond which they are satisfied. We do not care about small values of <code>n</code>.</p>
+<p><img src="assets/n0.png" alt="O, &#x3A9;, &#x19F;"></p>
+<p>Each of these complexities defines a numerical function: time vs. size.</p>
+<h1 id="orders">Orders</h1>
+<table>
+<thead>
+<tr>
+<th>notation</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O(1)</td>
+<td>constant</td>
+</tr>
+<tr>
+<td>O(log(n))</td>
+<td>logarithmic</td>
+</tr>
+<tr>
+<td>O((log(n))^c)</td>
+<td>polylogarithmic</td>
+</tr>
+<tr>
+<td>O(n)</td>
+<td>linear</td>
+</tr>
+<tr>
+<td>O(n^2)</td>
+<td>quadratic</td>
+</tr>
+<tr>
+<td>O(n^c)</td>
+<td>polynomial</td>
+</tr>
+<tr>
+<td>O(c^n)</td>
+<td>exponential</td>
+</tr>
+</tbody>
+</table>
+<p>Note, too, that O(log n) is exactly the same as O(log(n^c)). The logarithms differ only by a
+constant factor, and the big O notation ignores that. Similarly, logs with different constant
+bases are equivalent. But when both functions in a product are increasing, both constants are important.</p>
+<p>Each memory access takes exactly 1 step. We measure the run time of an algorithm by counting the number of steps.</p>
+<p>Be careful to differentiate between:</p>
+<ol>
+<li><p>Performance: how much time/memory/disk/... is actually used when a program is run. This depends on the machine, compiler, etc. as well as the code.</p>
+</li>
+<li><p>Complexity: how do the resource requirements of a program or algorithm scale, i.e., what happens as the size of the problem being solved gets larger?</p>
+</li>
+</ol>
+<h2 id="examples">Examples</h2>
+<h3 id="big-o">Big O</h3>
+<p><img src="assets/big-o.png" alt="big o"></p>
+<h3 id="big-omega">Big Omega</h3>
+<p><img src="assets/big-omega.png" alt="big omegae"></p>
+<h3 id="big-theta">Big Theta</h3>
+<p><img src="assets/big-theta.png" alt="big theta"></p>
+<h3 id="nested-loops">Nested Loops</h3>
+<pre><code class="lang-bash"><span class="hljs-keyword">for</span> I <span class="hljs-keyword">in</span> 1 .. N loop
+    <span class="hljs-keyword">for</span> J <span class="hljs-keyword">in</span> 1 .. M loop
+        sequence of statements
+    end loop;
+end loop;
+</code></pre>
+<p>The outer loop executes N times. Every time the outer loop executes, the inner loop
+executes M times. As a result, the statements in the inner loop execute a total of N <em> M
+times. Thus, the complexity is O(N </em> M).</p>
+<h3 id="statements-with-functionprocedure-calls">Statements with function/procedure calls</h3>
+<p>When a statement involves a function/procedure call, the complexity of the statement
+includes the complexity of the function/procedure. Assume that you know that function/
+procedure f takes constant time, and that function/procedure g takes time proportional to
+(linear in) the value of its parameter k. Then the statements below have the time
+complexities indicated.</p>
+<pre><code>f(k) has O(1)
+g(k) has O(k)
+</code></pre><p>When a loop is involved, the same rule applies. For example:</p>
+<pre><code>for J in 1 .. N loop
+    g(J)
+end loop;
+</code></pre><p>has complexity of N^2. The loop executes N times and each function/procedure call g(N) is complexity O(N).</p>
+<p>Multiplication by a factor does not add anything.</p>
+<p><img src="assets/big-o-cheat-sheet.jpg" alt="Big O cheat sheet"></p>
+<h2 id="resources">Resources:</h2>
+<p><a href="http://discrete.gr/complexity/" target="_blank">Dionysis &quot;dionyziz&quot; Zindros article about complexity analysis</a></p>
+<p><a href="http://web.mit.edu/16.070/www/lecture/big_o.pdf" target="_blank">MIT Big O PDF</a></p>
+<p><a href="https://www.youtube.com/watch?v=gSyDMtdPNpU&amp;index=2&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b" target="_blank">CSE373 2012 - Lecture 02 - Big-O Notation (Asymptotic Notation)</a></p>
+<p><a href="http://tutorial.math.lamar.edu/Classes/Alg/LogFunctions.aspx" target="_blank">train logarithms</a></p>
+<p><a href="https://github.com/ro31337/bigoposter/blob/master/bigoposter.pdf" target="_blank">Big o cheat sheet poster</a></p>
+<h3 id="videos">Videos</h3>
+<p><a href="https://www.youtube.com/watch?v=iOq5kSKqeR4" target="_blank">Harvard CS50 - Asymptotic Notation</a></p>
+<p><a href="https://www.youtube.com/watch?v=V6mKVRU1evU" target="_blank">Big O Notations (general quick tutorial)</a></p>
+<p><a href="https://www.youtube.com/watch?v=ei-A_wy5Yxw&amp;index=2&amp;list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN" target="_blank">Big O Notation (and Omega and Theta) - best mathematical explanation</a></p>
+<p><a href="https://www.youtube.com/watch?v=gSyDMtdPNpU&amp;index=2&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b" target="_blank">Steven Skiena</a></p>
+<p><a href="https://class.coursera.org/algorithmicthink1-004/lecture/59" target="_blank">Orders of Growth</a></p>
+<p><a href="https://class.coursera.org/algorithmicthink1-004/lecture/61" target="_blank">Asymptotics</a></p>
+<p><a href="https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98" target="_blank">UC Berkeley Big O</a></p>
+<p><a href="https://archive.org/details/ucberkeley_webcast_ca3e7UVmeUc" target="_blank">UC Berkeley Big Omega</a></p>
+<p><a href="https://www.youtube.com/watch?v=B3SpQZaAZP4&amp;index=10&amp;list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN" target="_blank">Amortized Analysis</a></p>
+<p><a href="https://class.coursera.org/algorithmicthink1-004/lecture/63" target="_blank">Illustrating &quot;Big O&quot;</a></p>
+<h3 id="slides--pdfs">Slides / Pdf&apos;s</h3>
+<p><a href="assets/lecture2.pdf">Steven Skiena</a></p>
+<p>TopCoder (includes recurrence relations and master theorem)</p>
+<ul>
+<li><a href="assets/computation-complexity-1.pdf">Part 1</a></li>
+<li><a href="assets/computation-complexity-2.pdf">Part 2</a></li>
+</ul>
+<h3 id="cheat-sheet">Cheat sheet</h3>
+<p><a href="http://bigocheatsheet.com/" target="_blank">http://bigocheatsheet.com/</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="./#complexity-analysis" class="navigation navigation-next " aria-label="Next page: Complexity analysis">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Algorithmic Complexity","level":"2.1","depth":1,"next":{"title":"Complexity analysis","level":"2.1.1","depth":2,"anchor":"#complexity-analysis","path":"algorithmic-complexity/README.md","ref":"algorithmic-complexity/README.md#complexity-analysis","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","livereload"],"pluginsConfig":{"expandable-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"algorithmic-complexity/README.md","mtime":"2018-08-29T15:36:18.214Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-29T16:45:15.695Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

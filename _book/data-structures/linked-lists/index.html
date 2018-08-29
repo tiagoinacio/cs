@@ -1,0 +1,921 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Linked Lists · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="./" />
+    
+    
+    <link rel="prev" href="../arrays/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part I</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../algorithmic-complexity/">
+            
+                <a href="../../algorithmic-complexity/#introduction">
+            
+                    
+                    Algorithmic Complexity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../algorithmic-complexity/">
+            
+                <a href="../../algorithmic-complexity/#complexity-analysis">
+            
+                    
+                    Complexity analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../algorithmic-complexity/">
+            
+                <a href="../../algorithmic-complexity/#asymptotic-behavior">
+            
+                    
+                    Asymptotic behavior
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../algorithmic-complexity/">
+            
+                <a href="../../algorithmic-complexity/#complexity">
+            
+                    
+                    Complexity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../algorithmic-complexity/">
+            
+                <a href="../../algorithmic-complexity/#theta">
+            
+                    
+                    Theta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../algorithmic-complexity/">
+            
+                <a href="../../algorithmic-complexity/#time-complexity">
+            
+                    
+                    Time Complexity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../algorithmic-complexity/">
+            
+                <a href="../../algorithmic-complexity/#big-o-notation">
+            
+                    
+                    Big-O Notation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../algorithmic-complexity/">
+            
+                <a href="../../algorithmic-complexity/#upper-bound---o">
+            
+                    
+                    Upper Bound (o)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../../algorithmic-complexity/">
+            
+                <a href="../../algorithmic-complexity/#tight-bound---θ">
+            
+                    
+                    Tight Bound (θ)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../../algorithmic-complexity/">
+            
+                <a href="../../algorithmic-complexity/#lower-bound---ω--ω">
+            
+                    
+                    Lower Bound (ω)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part II</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Data Structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../">
+            
+                <a href="../#introduction">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../arrays/">
+            
+                <a href="../arrays/#introduction">
+            
+                    
+                    Arrays
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../arrays/">
+            
+                <a href="../arrays/#definition">
+            
+                    
+                    Definition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../arrays/">
+            
+                <a href="../arrays/#applications">
+            
+                    
+                    Applications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../arrays/">
+            
+                <a href="../arrays/#element-identifier-and-addressing-formulas">
+            
+                    
+                    Element identifier and addressing formulas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../arrays/">
+            
+                <a href="../arrays/#one-dimensional-arrays">
+            
+                    
+                    One-Dimensional Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../arrays/">
+            
+                <a href="../arrays/#multi-dimensional-arrays">
+            
+                    
+                    Multi-Dimensional Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.6" data-path="../arrays/">
+            
+                <a href="../arrays/#jagged-arrays">
+            
+                    
+                    Jagged Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.7" data-path="../arrays/">
+            
+                <a href="../arrays/#resizable-arrays">
+            
+                    
+                    Resizable Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.8" data-path="../arrays/">
+            
+                <a href="../arrays/#efficiency">
+            
+                    
+                    Efficiency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.9" data-path="../arrays/">
+            
+                <a href="../arrays/#dimension">
+            
+                    
+                    Dimension
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="./">
+            
+                <a href="./#introduction">
+            
+                    
+                    Linked Lists
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="./">
+            
+                <a href="./#definition">
+            
+                    
+                    Definition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="./">
+            
+                <a href="./#disadvantages">
+            
+                    
+                    Disadvantages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3" data-path="./">
+            
+                <a href="./#singly-linked-list">
+            
+                    
+                    Singly linked list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.4" data-path="./">
+            
+                <a href="./#doubly-linked-list">
+            
+                    
+                    Doubly linked list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.5" data-path="./">
+            
+                <a href="./#multiply-linked-list">
+            
+                    
+                    Multiply linked list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.6" data-path="./">
+            
+                <a href="./#circular-linked-list">
+            
+                    
+                    Circular linked list
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Linked Lists</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="introduction">Introduction</h1>
+<h2 id="summary">Summary</h2>
+<p>Linked lists, it&apos;s named kind of like links in a chain, right, so we&apos;ve got a head pointer that points to a node that then has some data and points to another node, points to another node and eventually points to one that doesn&apos;t point any farther.</p>
+<p><img src="assets/singly-linked-list.png" width="400"></p>
+<p>A linked list is a collection of nodes that are connected by links. Linked list contains node which store the data items and the address to the next node. The first node is usually referred to as the head node and the last node is referred to as the tail node. The pointer of the head node points to the next node and the pointer of the tail node points to Null.</p>
+<p><img src="assets/linked-list.png" width="400"></p>
+<p>The dynamics of this data structure makes it easier to add or remove nodes from the end. In order to add/remove a node, you just need to keep track of the previous node and the node after and adjust the pointers accordingly.</p>
+<h2 id="definition">Definition</h2>
+<p>In computer science, a linked list is a linear collection of data elements, whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence. In its most basic form, each node contains: data, and a reference (in other words, a link) to the next node in the sequence. This structure allows for efficient insertion or removal of elements from any position in the sequence during iteration. More complex variants add additional links, allowing more efficient insertion or removal of nodes at arbitrary positions. A drawback of linked lists is that access time is linear (and difficult to pipeline). Faster access, such as random access, is not feasible. Arrays have better cache locality compared to linked lists.</p>
+<p>Linked lists are among the simplest and most common data structures. They can be used to implement several other common abstract data types, including lists, stacks, queues, associative arrays, and S-expressions, though it is not uncommon to implement those data structures directly without using a linked list as the basis.</p>
+<p><img src="assets/linked-list-svg.png" alt="Linked List"></p>
+<p>The principal benefit of a linked list over a conventional array is that the list elements can be easily inserted or removed without reallocation or reorganization of the entire structure because the data items need not be stored contiguously in memory or on disk, while restructuring an array at run-time is a much more expensive operation. Linked lists allow insertion and removal of nodes at any point in the list, and allow doing so with a constant number of operations by keeping the link previous to the link being added or removed in memory during list traversal.</p>
+<p>On the other hand, since simple linked lists by themselves do not allow random access to the data or any form of efficient indexing, many basic operations&#x2014;such as obtaining the last node of the list, finding a node that contains a given datum, or locating the place where a new node should be inserted&#x2014;may require iterating through most or all of the list elements. The advantages and disadvantages of using linked lists are given below.</p>
+<h2 id="disadvantages">Disadvantages</h2>
+<p>They use more memory than arrays because of the storage used by their pointers.</p>
+<p>Nodes in a linked list must be read in order from the beginning as linked lists are inherently sequential access.</p>
+<p>Nodes are stored incontiguously, greatly increasing the time periods required to access individual elements within the list, especially with a CPU cache.</p>
+<p>Difficulties arise in linked lists when it comes to reverse traversing. For instance, singly linked lists are cumbersome to navigate backwards[1] and while doubly linked lists are somewhat easier to read, memory is consumed in allocating space for a back-pointer.</p>
+<h2 id="singly-linked-list">Singly linked list</h2>
+<p>Each record of a linked list is often called an &apos;element&apos; or &apos;node&apos;.</p>
+<p>The field of each node that contains the address of the next node is usually called the &apos;next link&apos; or &apos;next pointer&apos;. The remaining fields are known as the &apos;data&apos;, &apos;information&apos;, &apos;value&apos;, &apos;cargo&apos;, or &apos;payload&apos; fields.</p>
+<p>The &apos;head&apos; of a list is its first node. The &apos;tail&apos; of a list may refer either to the rest of the list after the head, or to the last node in the list. In Lisp and some derived languages, the next node may be called the &apos;cdr&apos; (pronounced could-er) of the list, while the payload of the head node may be called the &apos;car&apos;.</p>
+<p>Singly linked lists contain nodes which have a data field as well as &apos;next&apos; field, which points to the next node in line of nodes. Operations that can be performed on singly linked lists include insertion, deletion and traversal.</p>
+<p><img src="assets/singly-linked-list-svg.png" alt="A singly linked list whose nodes contain two fields: an integer value and a link to the next node">
+<em>A singly linked list whose nodes contain two fields: an integer value and a link to the next node</em></p>
+<h3 id="operations">Operations</h3>
+<p><img src="assets/linked-list-api.png" width="400"></p>
+<h4 id="pushfront">PushFront</h4>
+<p>1 - Create a node <br>
+2 - Update our next pointer of that node to point to the head <br>
+3 - Update the head pointer to point to our new node <br>
+Allocate, update one pointer, update another pointer, constant time. It&apos;s O(1). <br></p>
+<table>
+<thead>
+<tr>
+<th>PushFront(key)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>node &lt;- new node</code></td>
+</tr>
+<tr>
+<td><code>node.key &lt;- key</code></td>
+</tr>
+<tr>
+<td><code>node.next &lt;- head</code></td>
+</tr>
+<tr>
+<td><code>head &lt;- node</code></td>
+</tr>
+<tr>
+<td><code>if tail = nil:</code></td>
+</tr>
+<tr>
+<td>&#xA0;&#xA0;<code>tail &lt;- head</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="topfront">TopFront</h4>
+<p>1 - Look at the first element and return it. <br>
+So TopFront is O(1).<br></p>
+<h4 id="popfront">PopFront</h4>
+<p>1 - Update the head pointer <br>
+2 - Remove the node. <br>
+So PopFront is going to be O(1).<br></p>
+<table>
+<thead>
+<tr>
+<th>PopFront()</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>if head = nil:</code></td>
+</tr>
+<tr>
+<td>&#xA0;&#xA0;<code>ERROR: empty list</code></td>
+</tr>
+<tr>
+<td><code>head &lt;- head.next</code></td>
+</tr>
+<tr>
+<td><code>if head = nil:</code></td>
+</tr>
+<tr>
+<td>&#xA0;&#xA0;<code>tail &lt;- nil</code></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h4 id="pushback">PushBack</h4>
+<p>If we want to push at the back, and we don&apos;t have a tail pointer, then it&apos;s going to be a fairly expensive operation. <br>
+1 - Start at the head and walk our way down the list until we get to the end <br>
+2 - Add a node there. <br>
+So that&apos;s going to be O(n) time. <br></p>
+<table>
+<thead>
+<tr>
+<th>PushBack(key)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>node &lt;- new node</code></td>
+</tr>
+<tr>
+<td><code>node.key &lt;- key</code></td>
+</tr>
+<tr>
+<td><code>node.next &lt;- nil</code></td>
+</tr>
+<tr>
+<td><code>head &lt;- node</code></td>
+</tr>
+<tr>
+<td><code>if tail = nil:</code></td>
+</tr>
+<tr>
+<td>&#xA0;&#xA0;<code>head &lt;- tail &lt;- node</code></td>
+</tr>
+<tr>
+<td><code>else:</code></td>
+</tr>
+<tr>
+<td>&#xA0;&#xA0;<code>tail.next &lt;- node</code></td>
+</tr>
+<tr>
+<td>&#xA0;&#xA0;<code>tail &lt;- node</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="topback">TopBack</h4>
+<p>1 - Start at the head and walk our way down the list until we get to the end <br>
+2 - Return node. <br>
+That&apos;s going to be O(n) time. <br></p>
+<h4 id="popback">PopBack</h4>
+<p>1 - Start at the head and walk our way down the list until we get to the end minus one <br>
+2 - Update the current node pointer to null <br>
+3 - Remove the last node <br>
+That&apos;s going to be O(n) time. <br></p>
+<p>If we have an head pointer and a tail pointer, getting the first element is cheap and getting the last element is cheap.</p>
+<p>But PopBack is still O(n) because tail pointer does not point to the previous node, only the last one, in a singy linked list.</p>
+<table>
+<thead>
+<tr>
+<th>PopFront()</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>if head = nil:</code></td>
+</tr>
+<tr>
+<td>&#xA0;&#xA0;<code>ERROR: empty list</code></td>
+</tr>
+<tr>
+<td><code>if head = tail:</code></td>
+</tr>
+<tr>
+<td>&#xA0;&#xA0;<code>head &lt;- tail &lt;- nil</code></td>
+</tr>
+<tr>
+<td><code>else:</code></td>
+</tr>
+<tr>
+<td>&#xA0;&#xA0;<code>p &lt;- head</code></td>
+</tr>
+<tr>
+<td>&#xA0;&#xA0;<code>while p.next.next != nil:</code></td>
+</tr>
+<tr>
+<td>&#xA0;&#xA0;&#xA0;&#xA0;<code>p &lt;- p.next</code></td>
+</tr>
+<tr>
+<td>&#xA0;&#xA0;<code>p.next &lt;- nil;</code></td>
+</tr>
+<tr>
+<td>&#xA0;&#xA0;<code>tail &lt;- p;</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="add-after">Add After</h4>
+<table>
+<thead>
+<tr>
+<th>AddAfter(node, key)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>node2 &lt;- new node</code></td>
+</tr>
+<tr>
+<td><code>node2.key &lt;- key</code></td>
+</tr>
+<tr>
+<td><code>node2.next = node.next</code></td>
+</tr>
+<tr>
+<td><code>node.next =  node2</code></td>
+</tr>
+<tr>
+<td><code>if tail = node:</code></td>
+</tr>
+<tr>
+<td>&#xA0;&#xA0;<code>tail &lt;- node2</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="doubly-linked-list">Doubly-Linked List</h2>
+<p>A doubly linked list is not much different from a singly linked list, the only thing that sets them apart is the pointer to the previous node. The picture below can give you a brief idea of what the structure should look like.</p>
+<p><img src="assets/doubly-ll.png" alt="Doubly linked list"></p>
+<p>In the case of a doubly linked list, the previous pointer of the head node points to Null and the next pointer of the tail points to Null. The previous pointer makes it easier to traverse in either direction. So, node addition and removal become super easy, all you need to do is keep track of the previous node and the next node and adjust the pointer accordingly.</p>
+<p>Bi-directional pointers, to the next node and previous node.</p>
+<p>The Linked-List contains a key, next pointer a previous pointer to go forward or go backwards.</p>
+<p><img src="assets/1220px-Doubly-linked-list.svg.png" alt="A doubly linked list whose nodes contain three fields: an integer value, the link forward to the next node, and the link backward to the previous node">
+<em>A doubly linked list whose nodes contain three fields: an integer value, the link forward to the next node, and the link backward to the previous node</em></p>
+<p>PopBack is now order 1, constant-time.</p>
+<p>A technique known as XOR-linking allows a doubly linked list to be implemented using a single link field in each node. However, this technique requires the ability to do bit operations on addresses, and therefore may not be available in some high-level languages.</p>
+<p>Many modern operating systems use doubly linked lists to maintain references to active processes, threads, and other dynamic objects. A common strategy for rootkits to evade detection is to unlink themselves from these lists.</p>
+<h3 id="operations">Operations</h3>
+<h4 id="pushbackkey">PushBack(key)</h4>
+<pre><code>node &lt;- new node
+node.key &lt;- key
+node.next &lt;- nil
+if tail = nil
+    head &lt;- tail &lt;- node
+    node.prev = nil
+else:
+    tail.next = node
+    node.prev = tail
+    tail = node
+</code></pre><h4 id="popback">PopBack()</h4>
+<pre><code>if head = nil:
+    ERROR: emtpy list
+if head = tail:
+    head &lt;- tail &lt;- nil
+else:
+    tail &lt;- tail.prev
+    tail.next &lt;- nil
+</code></pre><h4 id="addafternode-key">AddAfter(node, key)</h4>
+<pre><code>node2 &lt;- new node
+node2.key &lt;- key
+node2.next &lt;- node
+node2.prev &lt;- node.prev
+node.prev &lt;- node2
+if node2.prev != nil:
+    node2.prev.next &lt;- node2
+if head = node:
+    head &lt;- node2
+</code></pre><h2 id="multiply-linked-list">Multiply linked list</h2>
+<p>In a &apos;multiply linked list&apos;, each node contains two or more link fields, each field being used to connect the same set of data records in a different order of same set(e.g., by name, by department, by date of birth, etc.). While doubly linked lists can be seen as special cases of multiply linked list, the fact that the two and more orders are opposite to each other leads to simpler and more efficient algorithms, so they are usually treated as a separate case.</p>
+<h2 id="circular-linked-list">Circular linked list</h2>
+<p>In the last node of a list, the link field often contains a null reference, a special value used to indicate the lack of further nodes. A less common convention is to make it point to the first node of the list; in that case the list is said to be &apos;circular&apos; or &apos;circularly linked&apos;; otherwise it is said to be &apos;open&apos; or &apos;linear&apos;. It is a list where the last pointer points to the first node.</p>
+<p><img src="assets/700px-Circularly-linked-list.svg" alt="Circular Linked List">
+<em>A circular linked list</em></p>
+<p>In the case of a circular doubly linked list, the first node also points to the last node of the list.</p>
+<h3 id="operations-time">Operations Time</h3>
+<p><img src="assets/doubly-linked-list.png" width="300px"></p>
+<h2 id="order-of-common-operations">Order of common operations</h2>
+<p><img src="assets/order-of-operations.png" width="350px"></p>
+<h1 id="resources">Resources:</h1>
+<p><a href="https://www.coursera.org" target="_blank">Coursera</a></p>
+<p><a href="https://medium.com/swlh/introduction-to-data-structures-9134b7d064a6" target="_blank">Introduction to data structures</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../arrays/#dimension" class="navigation navigation-prev " aria-label="Previous page: Dimension">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="./#definition" class="navigation navigation-next " aria-label="Next page: Definition">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Linked Lists","level":"3.1.3","depth":2,"next":{"title":"Definition","level":"3.1.3.1","depth":3,"anchor":"#definition","path":"data-structures/linked-lists/README.md","ref":"data-structures/linked-lists/README.md#definition","articles":[]},"previous":{"title":"Dimension","level":"3.1.2.9","depth":3,"anchor":"#dimension","path":"data-structures/arrays/README.md","ref":"data-structures/arrays/README.md#dimension","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","livereload"],"pluginsConfig":{"expandable-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"data-structures/linked-lists/README.md","mtime":"2018-08-29T16:36:49.320Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-29T16:45:15.695Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

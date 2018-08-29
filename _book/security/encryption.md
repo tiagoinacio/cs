@@ -1,0 +1,1 @@
+Hash is not encryption. there is no way to reverse the hash and get the original value. 
